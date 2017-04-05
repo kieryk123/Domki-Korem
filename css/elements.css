@@ -1,0 +1,123 @@
+p {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 2.5;
+  color: #5a5d62;
+  font-size: 15px;
+  margin-bottom: 20px; }
+
+.section-title {
+  font-size: 48px;
+  text-transform: uppercase; }
+  @media only screen and (max-width: 480px) {
+    .section-title {
+      font-size: 33px; } }
+
+.image-title {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700; }
+  @media only screen and (max-width: 480px) {
+    .image-title {
+      font-size: 25px; } }
+
+.section-description {
+  line-height: 1.9;
+  color: #5a5d62;
+  font-style: italic;
+  margin-bottom: 40px; }
+  @media only screen and (max-width: 480px) {
+    .section-description {
+      font-size: 19px; } }
+
+.separator {
+  display: inline-block;
+  border: 2px solid #e2e3e8;
+  width: 100%;
+  max-width: 170px;
+  margin-top: 35px;
+  margin-bottom: 15px; }
+
+.zoomHover {
+  overflow: hidden;
+  position: relative;
+  min-width: 100%;
+  min-height: 208px; }
+  .zoomHover img {
+    -moz-transition: all 0.65s ease-in-out;
+    -webkit-transition: all 0.65s ease-in-out;
+    transition: all 0.65s ease-in-out; }
+    .zoomHover img:hover {
+      -moz-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1); }
+
+.column {
+  padding-left: 25px;
+  padding-right: 25px; }
+
+.btn-first {
+  background-color: #2b2e35;
+  color: white;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 0;
+  padding: 13px;
+  font-size: 13px;
+  transition: all 0.15s linear; }
+  .btn-first:hover {
+    background-color: #2F333A;
+    color: white; }
+
+.btn-contact {
+  background-color: #353B4B;
+  color: white;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 0;
+  padding: 13px;
+  font-size: 13px;
+  transition: all 0.15s linear; }
+  .btn-contact:hover {
+    background-color: #2F333A;
+    color: white; }
+
+.btn-second {
+  background-color: #7e7e7e;
+  color: white;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 0;
+  padding: 13px;
+  font-size: 13px;
+  transition: all 0.15s linear; }
+  .btn-second:hover {
+    background-color: #2F333A;
+    color: white; }
+
+.form-control {
+  background-color: #353B4B;
+  color: white;
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none; }
+
+.form-control::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: white; }
+
+.form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  color: white; }
+
+.form-control:-ms-input-placeholder {
+  /* IE 10+ */
+  color: white; }
+
+.form-control:-moz-placeholder {
+  /* Firefox 18- */
+  color: white; }
+
+.house-info-list {
+  padding-left: 20px; }
+
+/*# sourceMappingURL=elements.css.map */

@@ -1,0 +1,47 @@
+header .intro-about {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 55vh;
+  width: 100%; }
+  header .intro-about .intro-about-box {
+    text-transform: uppercase;
+    color: white;
+    margin-top: 120px; }
+    header .intro-about .intro-about-box .intro-title {
+      font-size: 50px; }
+    header .intro-about .intro-about-box .intro-description {
+      text-transform: none; }
+
+main section#first {
+  padding-top: 80px;
+  padding-bottom: 80px; }
+main section.image-separator .title-box .separator-title {
+  font-size: 40px; }
+  @media only screen and (max-width: 480px) {
+    main section.image-separator .title-box .separator-title {
+      font-size: 33px; } }
+  @media only screen and (max-width: 1200px) {
+    main section.image-separator .title-box .separator-title {
+      font-size: 34px; } }
+main section#second {
+  padding-top: 110px;
+  padding-bottom: 50px; }
+  main section#second .column {
+    background-color: #F8F8F8;
+    padding: 0;
+    margin-bottom: 60px; }
+    main section#second .column .text-box {
+      padding-top: 20px;
+      padding-bottom: 10px;
+      padding-left: 25px;
+      padding-right: 25px; }
+      main section#second .column .text-box .col-title {
+        text-transform: uppercase;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        font-size: 21px; }
+      main section#second .column .text-box .col-description {
+        font-size: 14px; }
+
+/*# sourceMappingURL=about.css.map */

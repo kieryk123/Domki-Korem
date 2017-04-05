@@ -1,0 +1,321 @@
+// GOOGLE FONT IMPORT
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,500,700,900&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700&subset=latin-ext');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
+}
+
+.position-static {
+  position: relative;
+  bottom: 88px;
+  left: 0;
+  right: 0;
+}
+
+.position-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+// dropdown on hover
+@media (min-width: 767px) {
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+  }
+}
+.dropdown-menu {
+  background-color: #24272D;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  padding-bottom: 0;
+  padding-top: 3px;
+}
+.dropdown-menu>li>a {
+  color: white;
+  padding: 10px 15px;
+  &:hover, &:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+  }
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+  color: white;
+  background-color: inherit;
+}
+@media (min-width: 768px) {
+  .navbar-right .dropdown-menu {
+    right: inherit;
+    left: auto;
+  }
+}
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: white;
+    &:hover, &:focus {
+      color: white;
+    }
+  }
+  .navbar-nav .open .dropdown-menu>li>a {
+    line-height: 32px;
+  }
+}
+
+nav.navbar-default  {
+  min-height: 88px;
+  background-color: #24272D;
+  border: 0;
+  border-radius: 0;
+  .navbar-toggle {
+    border-color: white;
+    border-radius: 0;
+    margin-top: 26px;
+    &:hover, &:focus {
+      background-color: transparent;
+    }
+    .icon-bar {
+      background-color: white;
+    }
+  }
+  .navbar-collapse {
+    box-shadow: none;
+    border: 0;
+  }
+  .navbar-brand {
+    padding-top: 32px;
+    padding-bottom: 33px;
+    color: white;
+    font-size: 22px;
+    text-transform: uppercase;
+    &:hover, &:focus {
+      color: white;
+    }
+  }
+  .navbar-nav>li>a {
+    color: white;
+    padding-top: 32px;
+    padding-bottom: 33px;
+    font-size: 19px;
+    &:hover, &:focus {
+      color: white;
+    }
+  }
+}
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+  max-height: 355px;
+  @media (max-width: 767px) {
+    max-height: 570px;
+  }
+}
+
+header {
+  .intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/front/intro.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .intro-box {
+    border: 7px solid rgba(255, 255, 255, 1);
+    padding: 40px;
+    margin-bottom: 80px;
+    text-align: center;
+    @media only screen and (max-width : 768px) {
+      padding: 25px;
+    }
+    @media only screen and (max-width : 480px) {
+      padding: 22px;
+    }
+    .intro-title {
+      color: white;
+      font-size: 65px;
+      text-transform: uppercase;
+      font-weight: 700;
+      @media only screen and (max-width : 768px) {
+        font-size: 38px;
+      }
+      @media only screen and (max-width : 480px) {
+        font-size: 23px;
+      }
+    }
+    .intro-sentence {
+      color: white;
+      text-align: center;
+      @media only screen and (max-width : 768px) {
+        font-size: 20px;
+      }
+      @media only screen and (max-width : 480px) {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+main {
+  section#about {
+    padding-top: 40px;
+    padding-bottom: 100px;
+  }
+  section.image-separator {
+    padding-bottom: 100px;
+    padding-top: 100px;
+    @media only screen and (max-width : 480px) {
+      background-position: center!important;
+    }
+    .title-box {
+      border-right: 3px solid white;
+      padding: 25px 0 25px 0;
+      .separator-title {
+        color: white;
+        font-size: 48px;
+        text-transform: uppercase;
+        @media only screen and (max-width : 480px) {
+          font-size: 33px;
+        }
+      }
+    }
+    .section-description {
+      color: white;
+      padding-top: 25px;
+    }
+  }
+  section#services {
+    padding-bottom: 50px;
+    padding-top: 100px;
+    .section-description {
+      margin-bottom: 90px;
+    }
+    .icon-description {
+      color: #333;
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 1.8;
+    }
+    .icon-box {
+      text-align: center;
+      margin-bottom: 100px;
+      .icon {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        background-image: url("../img/kominek.png");
+        background-position: left;
+        transition: all 0.16s linear;
+        cursor: pointer;
+        &:hover {
+          background-position: right;
+        }
+      }
+    }
+    .icon-box2 {
+      text-align: center;
+      margin-bottom: 100px;
+      .icon {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        background-image: url("../img/led.png");
+        background-position: left;
+        transition: all 0.16s linear;
+        cursor: pointer;
+        &:hover {
+          background-position: right;
+        }
+      }
+    }
+    .icon-box3 {
+      text-align: center;
+      margin-bottom: 100px;
+      .icon {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        background-image: url("../img/sypialnia.png");
+        background-position: left;
+        transition: all 0.16s linear;
+        cursor: pointer;
+        &:hover {
+          background-position: right;
+        }
+      }
+    }
+    .icon-box4 {
+      text-align: center;
+      margin-bottom: 100px;
+      .icon {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        background-image: url("../img/zmywarka.png");
+        background-position: left;
+        transition: all 0.16s linear;
+        cursor: pointer;
+        &:hover {
+          background-position: right;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  font-family: 'Open Sans', sans-serif;
+  section.first {
+    background-color: #24272D;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .footer-box {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  section.second {
+    background-color: #2B2E35;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .copyright-box {
+      .copyright {
+        color: #5a5d62;
+        a {
+          color: #868a92;
+          transition: all 0.16s linear;
+          &:hover, &:focus {
+            color: white;
+            text-decoration: none;
+          }
+        }
+      }
+      a {
+        color: white;
+        transition: all 0.16s linear;
+        &:hover, &:focus {
+          color: #2ba0a3;
+          text-decoration: none;
+        }
+        i {
+          padding-right: 5px;
+        }
+        @media only screen and (max-width : 768px) {
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}
+
+@import "elements";
+@import "about";
+@import "offer";
+@import "gallery";
+@import "house-description";

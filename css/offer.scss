@@ -1,0 +1,46 @@
+header {
+	.intro-offer {
+		display: flex;
+    justify-content: flex-start;
+    align-items: center;
+		height: 55vh;
+    width: 100%;
+		.intro-offer-box {
+			text-transform: uppercase;
+			color: white;
+			margin-top: 120px;
+			.intro-title {
+				font-size: 50px;
+			}
+			.intro-description {
+				text-transform: none;
+			}
+		}
+	}
+}
+
+section#offer {
+	padding-top: 110px;
+	padding-bottom: 50px;
+	.column {
+		background-color: #F8F8F8;
+		padding: 0;
+		margin-bottom: 60px;
+		box-shadow: 0 0.5px 1.5px rgba(0,0,0,0.12), 0 0.5px 1px rgba(0,0,0,0.24);
+		.text-box {
+			padding-top: 20px;
+			padding-bottom: 30px;
+			padding-left: 25px;
+			padding-right: 25px;
+			.col-title {
+				text-transform: uppercase;
+				margin-top: 25px;
+				margin-bottom: 25px;
+				font-size: 21px;
+			}
+			.col-description {
+				font-size: 14px;
+			}
+		}
+	}
+}
